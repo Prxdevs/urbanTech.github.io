@@ -664,12 +664,12 @@
                             </div>
                             <ul
                                 style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Gallery</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./#hashgallery">Gallery</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
                                 <li><a href="#">Get A Free Quote</a></li>
-                                <!-- <li><a href="#">Contact</a></li>
+                                <!-- <li><a href="./contact.html">Contact</a></li>
                                 <li><a href="#">About us</a></li>
                                 <li><a href="#">Our Services</a></li>
                                 <li><a href="#">Expert Team</a></li>
@@ -688,11 +688,21 @@
                             </div>
                             <div class="subscribe-form" style="display: flex;">
                                 <div class="footer-social-icon" style="display: flex; justify-content: center;">
-                                    <a href="tel:+916353111919"> <i class="fa-solid fa-phone"
+                                    <a href="tel:+919154940013"> <i class="fa-solid fa-phone"
                                             style="color: #ffffff; margin-right: 5%;"></i></a>
-                                    <span style="margin-right: 5%; width: 200px;">+91 6353 11 1919</span>
+                                    <span style="margin-right: 5%; width: 200px;">+91 9154940013</span>
                                 </div>
                             </div>
+
+<div class="subscribe-form" style="display: flex;">
+                                <div class="footer-social-icon" style="display: flex; justify-content: center;">
+                                    <a href="tel:+919154940014"> <i class="fa-solid fa-phone"
+                                            style="color: #ffffff; margin-right: 5%;"></i></a>
+                                    <span style="margin-right: 5%; width: 200px;">+91 9154940014</span>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -933,7 +943,8 @@
     </div>
 
     <script>
-        const baseURL = 'http://localhost:2012';
+        const to = 'ppurvesh77@gmail.com';
+                        const baseURL = 'https://mail.prxdevs.com:2011';
     
         document.getElementById('AffiliatesPopupForm').addEventListener('submit', function (event) {
             event.preventDefault();
@@ -948,7 +959,8 @@
                 city: document.querySelector('input[name="your-city"]:checked') ? document.querySelector('input[name="your-city"]:checked').value : '',
                 name: document.querySelector('input[name="your-name"]').value,
                 phone: document.querySelector('input[name="your-mobilenumber"]').value,
-                whatsappOptIn: document.querySelector('input[name="Whatsapp_OptIN"]').checked
+                whatsappOptIn: document.querySelector('input[name="Whatsapp_OptIN"]').checked,
+                toEmail: to
             };
     
             fetch(`${baseURL}/submitForm`, {

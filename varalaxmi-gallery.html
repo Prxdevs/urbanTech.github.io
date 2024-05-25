@@ -197,20 +197,22 @@
                                                     background-color: #000;
                                                     padding: 5px;
                                                 }
+
                                                 @media screen and (max-width:500px) {
-                                                    .tags-all{
-                                                        margin:10% 0 1% 15px;
+                                                    .tags-all {
+                                                        margin: 10% 0 1% 15px;
                                                     }
                                                 }
+
                                                 @media screen and (min-width:500px) {
-                                                    .tags-all{
-                                                        margin:2% 0 1% 15px;
+                                                    .tags-all {
+                                                        margin: 2% 0 1% 15px;
                                                     }
                                                 }
                                             </style>
-                                        <div style="padding: 1% 0 0 1%; font-weight:bolder;">
-                                            <h1>Mrs. Varalaxmi Project</h1>
-                                        </div>
+                                            <div style="padding: 1% 0 0 1%; font-weight:bolder;">
+                                                <h1>Mrs. Varalaxmi Project</h1>
+                                            </div>
 
                                             <!-- <div class="tags-all">
                                                 <button class="button-13 filterButton" data-tag="all">Show All</button>
@@ -234,9 +236,10 @@
                                                     <div class="gallery-image">
                                                         <a href="./varalaxmi-images/v1.jpeg">
                                                             <img decoding="async" style="margin: 5px;" width="300px"
-                                                                height="300px" src="./varalaxmi-images/v1.jpeg" alt="gallery-8" />
+                                                                height="300px" src="./varalaxmi-images/v1.jpeg"
+                                                                alt="gallery-8" />
                                                             <!-- <i -->
-                                                                <!-- style="color:#fff; background-color: #000000;">Birthday</i> -->
+                                                            <!-- style="color:#fff; background-color: #000000;">Birthday</i> -->
                                                         </a>
                                                     </div>
                                                 </div>
@@ -245,9 +248,10 @@
                                                     <div class="gallery-image">
                                                         <a href="./varalaxmi-images/v2.jpeg">
                                                             <img decoding="async" style="margin: 5px;" width="300px"
-                                                                height="300px" src="./varalaxmi-images/v2.jpeg" alt="gallery-8" />
+                                                                height="300px" src="./varalaxmi-images/v2.jpeg"
+                                                                alt="gallery-8" />
                                                             <!-- <i -->
-                                                                <!-- style="color:#fff; background-color: #000000;">Anniversary</i> -->
+                                                            <!-- style="color:#fff; background-color: #000000;">Anniversary</i> -->
                                                         </a>
                                                     </div>
                                                 </div>
@@ -256,9 +260,10 @@
                                                     <div class="gallery-image">
                                                         <a href="./varalaxmi-images/v3.jpeg">
                                                             <img decoding="async" style="margin: 5px;" width="300px"
-                                                                height="300px" src="./varalaxmi-images/v3.jpeg" alt="gallery-8" />
+                                                                height="300px" src="./varalaxmi-images/v3.jpeg"
+                                                                alt="gallery-8" />
                                                             <!-- <i -->
-                                                                <!-- style="color:#fff; background-color: #000000;">Anniversary</i> -->
+                                                            <!-- style="color:#fff; background-color: #000000;">Anniversary</i> -->
                                                         </a>
                                                     </div>
                                                 </div>
@@ -267,9 +272,10 @@
                                                     <div class="gallery-image">
                                                         <a href="./varalaxmi-images/v4.jpeg">
                                                             <img decoding="async" style="margin: 5px;" width="300px"
-                                                                height="300px" src="./varalaxmi-images/v4.jpeg" alt="gallery-8" />
+                                                                height="300px" src="./varalaxmi-images/v4.jpeg"
+                                                                alt="gallery-8" />
                                                             <!-- <i -->
-                                                                <!-- style="color:#fff; background-color: #000000;">Birthday</i> -->
+                                                            <!-- style="color:#fff; background-color: #000000;">Birthday</i> -->
                                                         </a>
                                                     </div>
                                                 </div>
@@ -278,9 +284,10 @@
                                                     <div class="gallery-image">
                                                         <a href="./varalaxmi-images/v5.jpeg">
                                                             <img decoding="async" style="margin: 5px;" width="300px"
-                                                                height="300px" src="./varalaxmi-images/v5.jpeg" alt="gallery-8" />
+                                                                height="300px" src="./varalaxmi-images/v5.jpeg"
+                                                                alt="gallery-8" />
                                                             <!-- <i -->
-                                                                <!-- style="color:#fff; background-color: #000000;">Birthday</i> -->
+                                                            <!-- style="color:#fff; background-color: #000000;">Birthday</i> -->
                                                         </a>
                                                     </div>
                                                 </div>
@@ -289,44 +296,45 @@
                                                     <div class="gallery-image">
                                                         <a href="./varalaxmi-images/v6.jpeg">
                                                             <img decoding="async" style="margin: 5px;" width="300px"
-                                                                height="300px" src="./varalaxmi-images/v6.jpeg" alt="gallery-8" />
+                                                                height="300px" src="./varalaxmi-images/v6.jpeg"
+                                                                alt="gallery-8" />
                                                             <!-- <i -->
-                                                                <!-- style="color:#fff; background-color: #000000;">Birthday</i> -->
+                                                            <!-- style="color:#fff; background-color: #000000;">Birthday</i> -->
                                                         </a>
                                                     </div>
                                                 </div>
                                             </div>
-                                            </div>
+                                        </div>
 
 
-                                            <script>
-                                                // Add event listeners to the filter buttons
-                                                var filterButtons = document.querySelectorAll('.filterButton');
+                                        <script>
+                                            // Add event listeners to the filter buttons
+                                            var filterButtons = document.querySelectorAll('.filterButton');
 
-                                                filterButtons.forEach(function (button) {
-                                                    button.addEventListener('click', function () {
-                                                        var selectedTag = button.getAttribute('data-tag');
-                                                        var galleryBlocks = document.querySelectorAll('.gallery-block');
+                                            filterButtons.forEach(function (button) {
+                                                button.addEventListener('click', function () {
+                                                    var selectedTag = button.getAttribute('data-tag');
+                                                    var galleryBlocks = document.querySelectorAll('.gallery-block');
 
-                                                        galleryBlocks.forEach(function (block) {
-                                                            var blockTag = block.getAttribute('data-tag');
-                                                            if (selectedTag === 'all' || selectedTag === blockTag) {
-                                                                block.style.display = 'block';
-                                                            } else {
-                                                                block.style.display = 'none';
-                                                            }
-                                                        });
+                                                    galleryBlocks.forEach(function (block) {
+                                                        var blockTag = block.getAttribute('data-tag');
+                                                        if (selectedTag === 'all' || selectedTag === blockTag) {
+                                                            block.style.display = 'block';
+                                                        } else {
+                                                            block.style.display = 'none';
+                                                        }
                                                     });
                                                 });
-                                            </script>
-                                        </div>
+                                            });
+                                        </script>
                                     </div>
-
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </article>
 
@@ -585,7 +593,7 @@
 
     <style>
         @media screen and (max-width:500px) {
-            .footer-section{
+            .footer-section {
                 margin-bottom: 10%;
             }
         }
@@ -600,11 +608,11 @@
                     <div class="col-xl-4 col-lg-4 mb-50">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="index.html"><img src="./urbantechlogo.png" class="img-fluid"
-                                        alt="logo"></a>
+                                <a href="index.html"><img src="./urbantechlogo.png" class="img-fluid" alt="logo"></a>
                             </div>
                             <div class="footer-text">
-                                <p>UrbanTech Interio's vision is to help out every category people to give beauty to their homes.</p>
+                                <p>UrbanTech Interio's vision is to help out every category people to give beauty to
+                                    their homes.</p>
                             </div>
                             <div class="footer-social-icon" style="display: flex; justify-content: center;">
                                 <span style="margin-right: 5%;">Follow us</span>
@@ -619,13 +627,14 @@
                             <div class="footer-widget-heading">
                                 <h3>Useful Links</h3>
                             </div>
-                            <ul style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Gallery</a></li>
-                                <li><a href="#">Contact</a></li>
+                            <ul
+                                style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./#hashgallery">Gallery</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
                                 <li><a href="#">Get A Free Quote</a></li>
-                                <!-- <li><a href="#">Contact</a></li>
+                                <!-- <li><a href="./contact.html">Contact</a></li>
                                 <li><a href="#">About us</a></li>
                                 <li><a href="#">Our Services</a></li>
                                 <li><a href="#">Expert Team</a></li>
@@ -644,8 +653,16 @@
                             </div>
                             <div class="subscribe-form" style="display: flex;">
                                 <div class="footer-social-icon" style="display: flex; justify-content: center;">
-                                    <a href="tel:+916353111919"> <i class="fa-solid fa-phone" style="color: #ffffff; margin-right: 5%;"></i></a>
-                                <span style="margin-right: 5%; width: 200px;">+91 6353 11 1919</span>
+                                    <a href="tel:+919154940013"> <i class="fa-solid fa-phone"
+                                            style="color: #ffffff; margin-right: 5%;"></i></a>
+                                    <span style="margin-right: 5%; width: 200px;">+91 9154940013</span>
+                                </div>
+                            </div>
+                            <div class="subscribe-form" style="display: flex;">
+                                <div class="footer-social-icon" style="display: flex; justify-content: center;">
+                                    <a href="tel:+919154940014"> <i class="fa-solid fa-phone"
+                                            style="color: #ffffff; margin-right: 5%;"></i></a>
+                                    <span style="margin-right: 5%; width: 200px;">+91 9154940014</span>
                                 </div>
                             </div>
                         </div>
@@ -859,7 +876,8 @@
                                             </div>
                                         </div>
                                         <div class="submit-wraper">
-                                            <button type="submit" id="LeadPopFormSubmitBtnAffiliates" class="red-btn pop-form-submit">
+                                            <button type="submit" id="LeadPopFormSubmitBtnAffiliates"
+                                                class="red-btn pop-form-submit">
                                                 <span>Submit</span>
                                                 <div class="lds-ring" style="display: none;">
                                                     <div></div>
@@ -868,9 +886,10 @@
                                                     <div></div>
                                                 </div>
                                             </button>
-                                            <label id="errorMsgPopAffiliates" class="" style="font-size: 12px;height: 20px; color: #dc3545;"></label>
+                                            <label id="errorMsgPopAffiliates" class=""
+                                                style="font-size: 12px;height: 20px; color: #dc3545;"></label>
                                         </div>
-                                        
+
                                         <!-- <div class="form-terms-cond">
                                             <p>By submitting this form, you agree to the <a
                                                     href="https://www.designcafe.com/privacy-policy/">privacy policy</a>
@@ -888,24 +907,26 @@
     </div>
 
     <script>
-        const baseURL = 'http://localhost:2012';
-    
+        const to = 'ppurvesh77@gmail.com';
+        const baseURL = 'https://mail.prxdevs.com:2011';
+
         document.getElementById('AffiliatesPopupForm').addEventListener('submit', function (event) {
             event.preventDefault();
-    
+
             const submitButton = document.getElementById('LeadPopFormSubmitBtnAffiliates');
             const loadingSpinner = submitButton.querySelector('.lds-ring');
             submitButton.disabled = true;
             loadingSpinner.style.display = 'inline-block';
-    
+
             const formData = {
                 propertyType: document.querySelector('input[name="PropertyType[]"]:checked') ? document.querySelector('input[name="PropertyType[]"]:checked').value : '',
                 city: document.querySelector('input[name="your-city"]:checked') ? document.querySelector('input[name="your-city"]:checked').value : '',
                 name: document.querySelector('input[name="your-name"]').value,
                 phone: document.querySelector('input[name="your-mobilenumber"]').value,
-                whatsappOptIn: document.querySelector('input[name="Whatsapp_OptIN"]').checked
+                whatsappOptIn: document.querySelector('input[name="Whatsapp_OptIN"]').checked,
+                toEmail: to
             };
-    
+
             fetch(`${baseURL}/submitForm`, {
                 method: 'POST',
                 headers: {

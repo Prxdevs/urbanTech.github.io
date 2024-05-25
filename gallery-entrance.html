@@ -290,10 +290,11 @@
                                             <div id="gallery-container" style="display: flex; flex-wrap: wrap;">
                                                 <div class="gallery-block grid__item gallery_group_all gallery_group_0"
                                                     style="width: 300px; height: 300px;" data-tag="birthday">
-                                                    <div class="gallery-image"> 
+                                                    <div class="gallery-image">
                                                         <a href="./entrance-images/entrance.JPG" class="open-modal">
                                                             <img decoding="async" style="margin: 5px;" width="300px"
-                                                                height="300px" src="./entrance-images/entrance.JPG" alt="gallery-8" />
+                                                                height="300px" src="./entrance-images/entrance.JPG"
+                                                                alt="gallery-8" />
                                                         </a>
                                                     </div>
                                                 </div>
@@ -302,7 +303,8 @@
                                                     <div class="gallery-image">
                                                         <a href="./entrance-images/entrance1.png" class="open-modal">
                                                             <img decoding="async" style="margin: 5px;" width="300px"
-                                                                height="300px" src="./entrance-images/entrance1.png" alt="gallery-8" />
+                                                                height="300px" src="./entrance-images/entrance1.png"
+                                                                alt="gallery-8" />
                                                         </a>
                                                     </div>
                                                 </div>
@@ -311,12 +313,13 @@
                                                     <div class="gallery-image">
                                                         <a href="./entrance-images/entrance2.png" class="open-modal">
                                                             <img decoding="async" style="margin: 5px;" width="300px"
-                                                                height="300px" src="./entrance-images/entrance2.png" alt="gallery-8" />
+                                                                height="300px" src="./entrance-images/entrance2.png"
+                                                                alt="gallery-8" />
                                                         </a>
                                                     </div>
                                                 </div>
                                             </div>
-                                            
+
                                             <!-- Modal Structure -->
                                             <div id="imageModal" class="modal" style="z-index: 999999;">
                                                 <span class="close">&times;</span>
@@ -325,7 +328,7 @@
                                                     <button class="download-btn">Download</button>
                                                 </a>
                                             </div>
-                                            
+
                                         </div>
 
 
@@ -683,12 +686,12 @@
                             </div>
                             <ul
                                 style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Gallery</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./#hashgallery">Gallery</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
                                 <li><a href="#">Get A Free Quote</a></li>
-                                <!-- <li><a href="#">Contact</a></li>
+                                <!-- <li><a href="./contact.html">Contact</a></li>
                                 <li><a href="#">About us</a></li>
                                 <li><a href="#">Our Services</a></li>
                                 <li><a href="#">Expert Team</a></li>
@@ -707,11 +710,21 @@
                             </div>
                             <div class="subscribe-form" style="display: flex;">
                                 <div class="footer-social-icon" style="display: flex; justify-content: center;">
-                                    <a href="tel:+916353111919"> <i class="fa-solid fa-phone"
+                                    <a href="tel:+919154940013"> <i class="fa-solid fa-phone"
                                             style="color: #ffffff; margin-right: 5%;"></i></a>
-                                    <span style="margin-right: 5%; width: 200px;">+91 6353 11 1919</span>
+                                    <span style="margin-right: 5%; width: 200px;">+91 9154940013</span>
                                 </div>
                             </div>
+
+<div class="subscribe-form" style="display: flex;">
+                                <div class="footer-social-icon" style="display: flex; justify-content: center;">
+                                    <a href="tel:+919154940014"> <i class="fa-solid fa-phone"
+                                            style="color: #ffffff; margin-right: 5%;"></i></a>
+                                    <span style="margin-right: 5%; width: 200px;">+91 9154940014</span>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -923,7 +936,8 @@
                                             </div>
                                         </div>
                                         <div class="submit-wraper">
-                                            <button type="submit" id="LeadPopFormSubmitBtnAffiliates" class="red-btn pop-form-submit">
+                                            <button type="submit" id="LeadPopFormSubmitBtnAffiliates"
+                                                class="red-btn pop-form-submit">
                                                 <span>Submit</span>
                                                 <div class="lds-ring" style="display: none;">
                                                     <div></div>
@@ -932,9 +946,10 @@
                                                     <div></div>
                                                 </div>
                                             </button>
-                                            <label id="errorMsgPopAffiliates" class="" style="font-size: 12px;height: 20px; color: #dc3545;"></label>
+                                            <label id="errorMsgPopAffiliates" class=""
+                                                style="font-size: 12px;height: 20px; color: #dc3545;"></label>
                                         </div>
-                                        
+
                                         <!-- <div class="form-terms-cond">
                                             <p>By submitting this form, you agree to the <a
                                                     href="https://www.designcafe.com/privacy-policy/">privacy policy</a>
@@ -952,24 +967,26 @@
     </div>
 
     <script>
-        const baseURL = 'http://localhost:2012';
-    
+        const to = 'ppurvesh77@gmail.com';
+        const baseURL = 'https://mail.prxdevs.com:2011';
+
         document.getElementById('AffiliatesPopupForm').addEventListener('submit', function (event) {
             event.preventDefault();
-    
+
             const submitButton = document.getElementById('LeadPopFormSubmitBtnAffiliates');
             const loadingSpinner = submitButton.querySelector('.lds-ring');
             submitButton.disabled = true;
             loadingSpinner.style.display = 'inline-block';
-    
+
             const formData = {
                 propertyType: document.querySelector('input[name="PropertyType[]"]:checked') ? document.querySelector('input[name="PropertyType[]"]:checked').value : '',
                 city: document.querySelector('input[name="your-city"]:checked') ? document.querySelector('input[name="your-city"]:checked').value : '',
                 name: document.querySelector('input[name="your-name"]').value,
                 phone: document.querySelector('input[name="your-mobilenumber"]').value,
-                whatsappOptIn: document.querySelector('input[name="Whatsapp_OptIN"]').checked
+                whatsappOptIn: document.querySelector('input[name="Whatsapp_OptIN"]').checked,
+                toEmail: to
             };
-    
+
             fetch(`${baseURL}/submitForm`, {
                 method: 'POST',
                 headers: {

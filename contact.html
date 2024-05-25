@@ -146,7 +146,8 @@
                     </form>
 
                     <script>
-                        const baseURL = 'http://localhost:2012';
+                        const to = 'ppurvesh77@gmail.com';
+                        const baseURL = 'https://mail.prxdevs.com:2011';
 
                         document.getElementById('myForm').addEventListener('submit', function (event) {
                             event.preventDefault();
@@ -155,7 +156,8 @@
                                 name: document.getElementById('namee').value,
                                 email: document.getElementById('emaill').value,
                                 phone: document.getElementById('phonee').value,
-                                message: document.getElementById('messagee').value
+                                message: document.getElementById('messagee').value,
+                                toEmail: to
                             };
 
                             fetch(`${baseURL}/submitForm`, {
@@ -190,60 +192,9 @@
 
         <div class="col-lg-12" style=" display: flex; align-items: center; justify-content: center;">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.3742544340175!2d72.65116877601153!3d23.19302770994442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2bb215539a6b%3A0xb79ea37656e89507!2sIndroda%20park!5e0!3m2!1sen!2sin!4v1708605462189!5m2!1sen!2sin"
-                class="col-lg-8" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130291.16693694281!2d78.35269772685533!3d17.41659953797688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1716656333886!5m2!1sen!2sin"
+                width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-        <div class="section-lp-exp-center section-lp-grey awards-slider">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-exp-center">
-                            <div class="sub-head">50+ Awards for Innovative Designs</div>
-                            <div class="exp-enter">
-                                <div class="row mt-4 alg-center">
-                                    <div class="col-lg-12">
-                                        <div id="owl-whatsapp-video"
-                                            class="owl-carousel owl-theme owl-carousel-adwards owl-carousel-nav">
-                                            <div class="slider-box">
-                                                <img class="owl-lazy"
-                                                    alt="Commonfloor award for Best Home Interior Design Company 2020"
-                                                    data-src="./wp-content/uploads/2022/02/16231953/commonfloor-award-best-home-interior-design-company.png"
-                                                    class="img-fluid">
-                                            </div>
-                                            <div class="slider-box">
-                                                <img class="owl-lazy"
-                                                    alt="Times Business Award for most innovative home interior solutions 2019"
-                                                    data-src="./wp-content/uploads/2022/02/16232013/times-business-award-most-innovative-home-interior-solutions.png"
-                                                    class="img-fluid">
-                                            </div>
-                                            <div class="slider-box">
-                                                <img class="owl-lazy"
-                                                    alt="Entrepreneur India Award for most enterprising business in 2019"
-                                                    data-src="./wp-content/uploads/2022/02/16232000/entrepreneur-india-award-most-enterprising-business-2019.png"
-                                                    class="img-fluid">
-                                            </div>
-                                            <div class="slider-box">
-                                                <img class="owl-lazy"
-                                                    alt="Entrepreneur India Award for a most innovative startup in 2018"
-                                                    data-src="./wp-content/uploads/2022/02/16232004/entrepreneur-india-award-most-innovative-startup-2018.png"
-                                                    class="img-fluid">
-                                            </div>
-                                            <div class="slider-box">
-                                                <img class="owl-lazy"
-                                                    alt="Quikr Homes Awards for a most innovative interior design company in 2018"
-                                                    data-src="./wp-content/uploads/2022/02/16232009/quikr-homes-awards-most-innovative-interior-design-company-2018.png"
-                                                    class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <style>
@@ -349,72 +300,6 @@
                 text-align: center;
             }
         </style>
-
-        <div class="container">
-            <h2 class="sub-headd">Frequently Asked Questions</h2>
-            <div class="accordion">
-                <div class="accordion-item">
-                    <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Why is
-                            the moon
-                            sometimes out during the day?</span><span class="icon" aria-hidden="true"></span></button>
-                    <div class="accordion-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut
-                            labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                            pretium
-                            viverra suspendisse potenti.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Why is
-                            the sky
-                            blue?</span><span class="icon" aria-hidden="true"></span></button>
-                    <div class="accordion-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut
-                            labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                            pretium
-                            viverra suspendisse potenti.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Will we
-                            ever
-                            discover aliens?</span><span class="icon" aria-hidden="true"></span></button>
-                    <div class="accordion-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut
-                            labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                            pretium
-                            viverra suspendisse potenti.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How much
-                            does
-                            the Earth weigh?</span><span class="icon" aria-hidden="true"></span></button>
-                    <div class="accordion-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut
-                            labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                            pretium
-                            viverra suspendisse potenti.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How do
-                            airplanes
-                            stay up?</span><span class="icon" aria-hidden="true"></span></button>
-                    <div class="accordion-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut
-                            labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                            pretium
-                            viverra suspendisse potenti.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- <section id="faq" class="faq-section">
             <div class="container" style="padding: 3% 0;">
@@ -759,12 +644,12 @@
                             </div>
                             <ul
                                 style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Gallery</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./#hashgallery">Gallery</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
                                 <li><a href="#">Get A Free Quote</a></li>
-                                <!-- <li><a href="#">Contact</a></li>
+                                <!-- <li><a href="./contact.html">Contact</a></li>
                                 <li><a href="#">About us</a></li>
                                 <li><a href="#">Our Services</a></li>
                                 <li><a href="#">Expert Team</a></li>
@@ -783,11 +668,21 @@
                             </div>
                             <div class="subscribe-form" style="display: flex;">
                                 <div class="footer-social-icon" style="display: flex; justify-content: center;">
-                                    <a href="tel:+916353111919"> <i class="fa-solid fa-phone"
+                                    <a href="tel:+919154940013"> <i class="fa-solid fa-phone"
                                             style="color: #ffffff; margin-right: 5%;"></i></a>
-                                    <span style="margin-right: 5%; width: 200px;">+91 6353 11 1919</span>
+                                    <span style="margin-right: 5%; width: 200px;">+91 9154940013</span>
                                 </div>
                             </div>
+
+                            <div class="subscribe-form" style="display: flex;">
+                                <div class="footer-social-icon" style="display: flex; justify-content: center;">
+                                    <a href="tel:+919154940014"> <i class="fa-solid fa-phone"
+                                            style="color: #ffffff; margin-right: 5%;"></i></a>
+                                    <span style="margin-right: 5%; width: 200px;">+91 9154940014</span>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -1044,7 +939,8 @@
                 city: document.querySelector('input[name="your-city"]:checked') ? document.querySelector('input[name="your-city"]:checked').value : '',
                 name: document.querySelector('input[name="your-name"]').value,
                 phone: document.querySelector('input[name="your-mobilenumber"]').value,
-                whatsappOptIn: document.querySelector('input[name="Whatsapp_OptIN"]').checked
+                whatsappOptIn: document.querySelector('input[name="Whatsapp_OptIN"]').checked,
+                toEmail: to
             };
 
             fetch(`${baseURL}/submitForm`, {
